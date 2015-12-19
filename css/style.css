@@ -617,9 +617,9 @@ h2.tittle:after, h2.tittle:before {
   background:#2dcc70;
   font-family: 'Comfortaa', cursive;
 }
-.services-left:nth-child(3),.services-left:nth-child(4) {
+/*.services-left:nth-child(3),.services-left:nth-child(4) {
   margin-top: 35px;
-}
+}*/
 .hi-icon {
   display: inline-block;
   cursor: pointer;
@@ -1487,9 +1487,9 @@ h2.tittle:after, h2.tittle:before {
    height: 70px;
    line-height: 4em;
  }
- .services-left:nth-child(3), .services-left:nth-child(4) {
+/* .services-left:nth-child(3), .services-left:nth-child(4) {
    margin-top: 25px;
- }
+ }*/
  .services {
    min-height: 495px;
  }
@@ -1753,9 +1753,9 @@ h2.tittle:after, h2.tittle:before {
    float: left;
    width: 100%;
  }
- .services-left:nth-child(3), .services-left:nth-child(4),.services-left:nth-child(2)  {
+/* .services-left:nth-child(3), .services-left:nth-child(4),.services-left:nth-child(2)  {
    margin-top: 20px;
- }
+ }*/
  .ser-top {
    width: 81%;
  }
@@ -1882,9 +1882,9 @@ h2.tittle:after, h2.tittle:before {
    text-align: center;
    margin-top: 15px;
  }
- .services-left:nth-child(3), .services-left:nth-child(4), .services-left:nth-child(2) {
+/* .services-left:nth-child(3), .services-left:nth-child(4), .services-left:nth-child(2) {
    margin-top: 25px;
- }
+ }*/
  .services {
    padding-top: 40px;
    min-height: 995px;
