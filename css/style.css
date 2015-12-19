@@ -902,6 +902,30 @@ h2.tittle:after, h2.tittle:before {
 }
 
 /*-- //gallery --*/
+.r1{
+    border: 1px solid white;
+    float: left;
+    padding: 10px;
+    width: 90%;
+    color: white;
+    background: #000;
+}
+.r2{
+    background: white;
+    color: #000;
+    float: right;
+    border: 1px solid white;
+    padding: 10px;
+    width: 5%;
+}
+
+.r2c {
+    color:black;
+    display: none;
+    text-align: justify;
+}
+#r1i, #r2i{cursor:pointer;}
+
 /*-- team --*/
 .team{
   background:#8EC358;
