@@ -322,7 +322,7 @@ a.callbacks_nav.callbacks2_nav.next {
 /*-- Slider part Ends Here --*/
 
 .header{
-  background:#84939a;
+  background:#000;
   padding:10px 0;
 }
 .header-left {
@@ -347,7 +347,7 @@ a.callbacks_nav.callbacks2_nav.next {
 .header-right ul li a{
   text-decoration:none;
   color:#fff;
-  font-size:14px;
+  font-size:24px;
 }
 .header-left p{
   color:#fff;
@@ -419,7 +419,7 @@ a.callbacks_nav.callbacks2_nav.next {
   text-align:center;
   font-size:16px;
   position: relative;
-  padding: 30px 22px !important;
+  padding: 9px 22px !important;
 }
 .social-icons {
   float: right;
@@ -466,20 +466,20 @@ a.callbacks_nav.callbacks2_nav.next {
 .navigation{
   position:relative;
 }
-.logo{
+.nav navbar-nav{
+  height: 9px;
+}
+/*.logo{
   z-index:9999;
   position:absolute;
   top: 15%;
   left: 45.5%;
-}
+}*/
 .logo a{
   text-decoration:none;
-  color:#cc7421;
+  color:#cc7421 !important;
   font-size:60px;
   font-family: 'JACKPORT REGULAR NCV';
-  position: relative;
-  left: -3vw;
-  top: -13vh;
 }
 .logo a span{
   display: block;
@@ -608,6 +608,14 @@ h2.tittle:after, h2.tittle:before {
 }
 .ser-grid{
 	float:left;
+  padding: 13px 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+  margin: 0;
+  border-radius: 160px;
+  background:#2dcc70;
+  font-family: 'Comfortaa', cursive;
 }
 .services-left:nth-child(3),.services-left:nth-child(4) {
   margin-top: 35px;
@@ -1068,7 +1076,7 @@ h2.tittle:after, h2.tittle:before {
 .contact-left ul li a:hover{
   color:#cc7421;
 }
-.contact-left input[type="text"],.contact-left textarea{
+/*.contact-left input[type="text"],.contact-left textarea{
   background: #fff;
   border: 1px solid #c2c2c2;
   color: #424341;
@@ -1111,7 +1119,7 @@ h2.tittle:after, h2.tittle:before {
   border:2px solid #cc7421;
   background:none;
   color:#cc7421;
-}
+}*/
 .contact-left p {
   color: #cc7421;
   font-size: 18px;
@@ -1283,7 +1291,7 @@ h2.tittle:after, h2.tittle:before {
  .contact-left h3 {
    font-size: 22px;
  }
- .contact-left input[type="text"], .contact-left textarea {
+ /*.contact-left input[type="text"], .contact-left textarea {
    padding: 7px 7px;
    font-size: 13px;
  }
@@ -1297,7 +1305,7 @@ h2.tittle:after, h2.tittle:before {
    font-size: 18px;
    padding: 4px 0;
    width: 19%;  
- }
+ }*/
  .contact-left ul li {
    font-size: 13px;
  }
@@ -1373,9 +1381,9 @@ h2.tittle:after, h2.tittle:before {
    float: left;
    width: 28%;
  }
- .contact-left input[type="text"]:nth-child(2) {
+ /*.contact-left input[type="text"]:nth-child(2) {
    margin: 0px 9px;
- }
+ }*/
  .nav > li > a {
    font-size: 14px;
    padding: 18px 12px !important;
@@ -1490,12 +1498,12 @@ h2.tittle:after, h2.tittle:before {
    float: left;
    width: 28%;
  }
- .contact-left input[type="text"] {
+ /*.contact-left input[type="text"] {
    width: 31.9%;
  }
  .contact-left input[type="submit"] {
    font-size: 15px;
- }
+ }*/
  .contact-left h3 {
    font-size: 20px;
  }
@@ -1511,10 +1519,10 @@ h2.tittle:after, h2.tittle:before {
  }
 }
 @media (max-width: 736px){
-	.logo {
+/*	.logo {
    top:3px;
    left: 5%;
- }
+ }*/
 /* .logo:before {
    left: -18%;
    bottom: -23px;
@@ -1561,9 +1569,9 @@ h2.tittle:after, h2.tittle:before {
    height: 151px;
    width: 196px;
  }
- .contact-left input[type="text"]:nth-child(2) {
+/* .contact-left input[type="text"]:nth-child(2) {
    margin: 0 8px;
- }
+ }*/
  .hi-icon {
    width: 57px;
    height: 57px;
@@ -1651,7 +1659,7 @@ h2.tittle:after, h2.tittle:before {
    float: left;
    width: 69%;
  }
- .contact-left input[type="submit"] {
+/* .contact-left input[type="submit"] {
    width: 20%;
  }
  .contact-left textarea {
@@ -1659,7 +1667,7 @@ h2.tittle:after, h2.tittle:before {
  }
  .contact-left textarea {
    min-height: 125px;
- }
+ }*/
  .footer-right {
    float: right;
    width: 25%;
@@ -1678,12 +1686,12 @@ h2.tittle:after, h2.tittle:before {
    float: left;
    width: 65%;
  }
- .contact-left input[type="text"] {
+/* .contact-left input[type="text"] {
    width: 100%;
  }
  .contact-left input[type="text"]:nth-child(2) {
    margin: 9px 0px;
- }
+ }*/
  .view {
    height: 169px;
    width: 252px;
@@ -1875,9 +1883,9 @@ h2.tittle:after, h2.tittle:before {
  .contact-bottom iframe {
    height: 165px;
  }
- .contact-left input[type="submit"] {
+/* .contact-left input[type="submit"] {
    width: 29%;
- }
+ }*/
  .contact-left ul {
    padding: .3em 0 0;
  }
