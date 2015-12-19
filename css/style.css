@@ -29,8 +29,8 @@ input[type="button"],input[type="submit"]{
 	-ms-transition:0.5s all;
 }
 @font-face {
- font-family: 'Niconne-Regular';
- src: url(../fonts/Niconne-Regular.ttf)format('truetype');
+ font-family: 'JACKPORT REGULAR NCV';
+ src: url(../fonts/JACKPORT REGULAR NCV.ttf)format('truetype');
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -383,7 +383,7 @@ a.callbacks_nav.callbacks2_nav.next {
   font-weight: 600;
 }
 .banner-info h4{
-  font-family: 'Niconne-Regular';
+  font-family: 'JACKPORT REGULAR NCV';
   color: #252524;
   font-size: 75px;
   margin: 50px 0 0 0;
@@ -476,10 +476,10 @@ a.callbacks_nav.callbacks2_nav.next {
   text-decoration:none;
   color:#cc7421;
   font-size:60px;
-  font-family: 'Niconne-Regular';
+  font-family: 'JACKPORT REGULAR NCV';
   position: relative;
-  left: -8vw;
-  top: 10vh;
+  left: -3vw;
+  top: -13vh;
 }
 .logo a span{
   display: block;
@@ -487,16 +487,16 @@ a.callbacks_nav.callbacks2_nav.next {
   text-align: center;
   color: #84939a;
 }
-.logo:before {
+/*.logo:before {
   content: '';
   position: absolute;
-  left: -80%;
+  left: -89%;
   bottom: -98px;
   border-left: 300px solid rgba(0, 0, 0, 0);
   border-right: 300px solid rgba(0, 0, 0, 0);
   border-top: 97px solid #fff;
   z-index: -1;
-}
+}*/
 /*-- //navigation --*/
 /* Bounce To Bottom */
 .hvr-bounce-to-bottom {
@@ -564,7 +564,7 @@ a.callbacks_nav.callbacks2_nav.next {
   min-height: 590px;
 }
 h3.tittle,h2.tittle{
-  font-family: 'Niconne-Regular';
+  font-family: 'JACKPORT REGULAR NCV';
   text-align:center;
   font-size:52px;
   color:#cc7421;
@@ -982,7 +982,7 @@ h2.tittle:after, h2.tittle:before {
 	background-image: url(../images/19.jpg);
 }
 .ch-info h4{
-  font-family: 'Niconne-Regular';
+  font-family: 'JACKPORT REGULAR NCV';
   color: #DF1E1C;
   letter-spacing: 2px;
   font-size: 30px;
@@ -1194,13 +1194,13 @@ h2.tittle:after, h2.tittle:before {
  .logo a {
    font-size: 50px;
  }
- .logo:before {
+ /*.logo:before {
    left: -34%;
    bottom: -40px;
    border-left: 92px solid rgba(0, 0, 0, 0);
    border-right: 92px solid rgba(0, 0, 0, 0);
    border-top: 43px solid #fff;
- }
+ }*/
  .social-icons {
    margin-top: 21px;
  }
@@ -1315,13 +1315,13 @@ h2.tittle:after, h2.tittle:before {
  .logo a {
    font-size: 44px;
  }
- .logo:before {
+/* .logo:before {
    left: -30%;
    bottom: -23px;
    border-left: 78px solid rgba(0, 0, 0, 0);
    border-right: 78px solid rgba(0, 0, 0, 0);
    border-top: 28px solid #fff;
- }
+ }*/
  .social-icons {
    margin-top: 16px;
  }
@@ -1389,13 +1389,13 @@ h2.tittle:after, h2.tittle:before {
  .logo a {
    font-size: 42px;
  }
- .logo:before {
+ /*.logo:before {
    left: -38%;
    bottom: -33px;
    border-left: 86px solid rgba(0, 0, 0, 0);
    border-right: 86px solid rgba(0, 0, 0, 0);
    border-top: 33px solid #fff;
- }
+ }*/
  .social-icons {
    margin-top: 17px;
  }
@@ -1515,13 +1515,13 @@ h2.tittle:after, h2.tittle:before {
    top:3px;
    left: 5%;
  }
- .logo:before {
+/* .logo:before {
    left: -18%;
    bottom: -23px;
    border-left: 65px solid rgba(0, 0, 0, 0);
    border-right: 65px solid rgba(0, 0, 0, 0);
    border-top: 24px solid #fff;
- }
+ }*/
  .logo a {
    font-size: 44px;
  }
@@ -1786,13 +1786,13 @@ h2.tittle:after, h2.tittle:before {
  .logo a {
    font-size: 38px;
  }
- .logo:before {
+/* .logo:before {
    left: -9%;
    bottom: -16px;
    border-left: 53px solid rgba(0, 0, 0, 0);
    border-right: 53px solid rgba(0, 0, 0, 0);
    border-top: 15px solid #fff;
- }
+ }*/
  .navbar-toggle {
    padding: 7px 7px;
  }
