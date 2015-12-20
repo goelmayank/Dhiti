@@ -11,10 +11,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/chocolat.css" rel="stylesheet">
-	<link href="css/cards.css" rel="stylesheet">
-	<link href="css/registeration_form.css" rel="stylesheet">
 	<!-- js -->
-	<script src="js/registeration_form.js"></script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<!-- //js -->
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -71,7 +68,9 @@
 					}
 				</script>
 				<ul>
-					<li><a class="scroll" href="#contact">Contact|Register</a></li>
+					<li><a class="scroll" href="#contact">Contact</a></li>
+					<li>|</li>
+					<li><a class="scroll" href="#">Register</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -118,58 +117,21 @@
 	<!-- //navigation -->
 	<!-- banner -->
 	<div class="banner">
-		<div class="container">
-			<script src="js/responsiveslides.min.js"></script>
-			<script>
-				$(function () {
-					$("#slider3").responsiveSlides({
-						auto: true,
-						pager: true,
-						nav: false,
-						speed: 500,
-						namespace: "callbacks",
-						before: function () {
-							$('.events').append("<li>before event fired.</li>");
-						},
-						after: function () {
-							$('.events').append("<li>after event fired.</li>");
-						}
-					});
-				});
-			</script>
-			<div  id="top" class="callbacks_container">
-				<ul class="rslides" id="slider3">
-					<li>
-						<div class="banner-info">
-							<h4>Because the ones who are crazy enough to think that they can change the world, are the ones who do.<br/><t><t>~Steve Jobs.</h4>							
-						</div>
-					</li>
-					<li>
-						<div class="banner-info">
-							<h4>Creative thinking inspires ideas. Ideas inspire change.<br/><t><t>~Barbara Januszkiewicz.</h4>						
-						</div>
-					</li>
-					<li>
-						<div class="banner-info">
-							<h4>Ideas are more powerful than guns. We would not let our enemies have guns, why should we let them have ideas.<br/><t><t>~Joseph Stalin.</h4>						
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
+		
 	</div>
 	<!-- //banner -->
 	<!-- about -->
 	<div id="about" class="about">
 		<div class="container">
 			<h3 class="tittle">About Us</h3>
-			<h5 class="text-justify"> We have remarkably skilled engineers in India. But sadly, the benefits of our engineering skills hardly reach the poor, who need it the most. Most of us believe that it is only the government which is to blame for not implementing plans properly. There are very few people who actually think about contributing in this process with their knowledge and skills. The catch is, they do not get the right platform for it.</h5>
 			<div class="about-grids">
 				<div class="col-md-5 abt-left">
 					<img src="images/dhiti-logo.png" alt="" />
 				</div>
 				<div class="col-md-7 abt-right">
-					<p class="text-justify">DHITI (Sanskrit for 'An Idea') provides such a platform for students, professors and passionate individuals who aspire for technology to reach the grassroots. By participating in Dhiti, you'll be finding solutions to some of the most pressing problems in the country. For the event, we roll out certain problem statements collected from various NGOs and platforms like techpedia. Over a period of two and a half months, participants work on these problem statements and find technical solutions that are efficient ,feasible and economical. The competition ends here, the idea doesn't. Efforts are made by students and NGOs to implement on the field, some of the more promising solutions ;we are already at the stage of implementing three solutions out of eight received last year and expect to complete them soon.</p>
+					<p class="text-justify">We have a population of around 1.2 billion and it is just a matter of time, that we will be the nation with the most number of young and technically sound work forces. Technology has grown in many forms and can be made accessible almost to all. It is just a luxury for some but can ease the life of many. It can be the key to solving some of the most pressing issues faced by the country today. We just need some ideas and tinkering to apply it on the field.</p>
+					<p class="text-justify">An example, detecting and diagnosing diseases is a very time-consuming and expensive affair, almost unavailable in remote areas. An interesting fact - Today, smartphones have a better reach than basic healthcare facilities! Last year a student team developed a low-cost smartphone operated microscope, to detect malaria, though not accurately but the results were convincing enough to improve upon and take it further.</p>
+					<p class="text-justify">It is only by solving such basic problems that development will occur collectively in every community and not selectively. Dhiti(sanskrit for “An idea”) is a platform for passionate individuals who ideate and aspire that technology reaches the grassroots. Here we will provide you with problems and mentors to form feasible solutions to various issues and provide recognition to your solution. So , let’s put our ideas and knowledge bases to some real use.</p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -431,232 +393,111 @@
 		</div>
 		<!-- //gallery -->
 		<!-- structure -->
-		<div id="structure" class="structure">
+		<div id="stucture" class="team">
 			<div class="container">
-				<h3 class="tittle t-structure">Structure</h3>
-				<div class="col-xs-12 col-sm-12 search-result-wrapper">
-					<div class="row">
-						<div class="rest-result col-lg-6 col-sm-6 col-xs-12">
-							<div class="row rest-wrapper">
-								<img class="col-xs-12 rest-img" src="images/tech.jpg">
-								<div class="col-xs-12 rest-cvr">
-									<div class="rest-name">Abstract Submission</div>
+				<h3 class="tittle t-team">Structure</h3>
+				<ul class="ch-grid">
+					<li>
+						<img id="image1" src="images/Abstract_submission.PNG" style="display:none;" width="120" height="120"/>
+						<div class="ch-item ch-img-1" onclick"$('#image1').show()">				
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back" >
+										<h4>Abstract Submission</h4>
+									</div>	
 								</div>
-								<div class="clearfix"> </div>
-								<div class="col-xs-12 rest-info">
-									<div class="rest-add">
-										<div id="notification" class="text-justify">
-											<span style="color: #c0392b;font-weight:800"></span>
-											<p>Teams of maximum 4 students can participate in the event. A pool of problem statements in some specific areas, like Agriculture, Energy, Conservation, Education, Resource Optimization, Health, etc. has been uploaded.</p>
-											<p><strong>Participants can either </strong> <br>Take up any one problem statement from those given under different specific areas and suggest a technically and financially sound solution. (From Given Problem Pool)<br><strong>OR</strong><br>Work on a problem identified by them in any given specific area and present a technically and financially feasible solution. (Open Category)</p>
-											<p><strong>Note:</strong> <br>Please check out the <a href="#!/page_Problem" class="link1">Problem Statement</a> pages for further information.<br></p>
-										</div> 
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"></div>
+									<div class="ch-info-back">
+										<h4>Mentorship</h4>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="rest-result col-lg-6 col-sm-6 col-xs-12">
-							<div class="row rest-wrapper">
-								<img class="col-xs-12 rest-img" src="images/tech.jpg">
-								<div class="col-xs-12 rest-cvr">
-									<div class="rest-name">Mentorship</div>
-								</div>
-								<div class="col-xs-12 rest-info">
-									<div class="rest-add">
-										<div class="text-justify" id="notification">
-											<span style="color: #c0392b;font-weight:800"></span>
-											<p>The Mentorship phase will kick off as soon as the Abstract Phase (Phase 1) ends. The 30 shortlisted teams will be given an option of mentorship.</p>
-
-											<p>We consider mentorship essential for the participants so as to give them an insight of the exact problems that are faced at the grassroots, of the situations and the constraints that may be involved during the implementation of these solutions. Mentorship will be provided in the following two forms:
-												<ul>
-													<li>Technical assistance to the participants (without changing the basic idea of the solution), if required.</li>
-													<li>Assistance in getting a clearer idea regarding the problem statement which will help the participants to arrive at  a more suitable and feasible solution to the problem.</li>
-
-												</ul>
-
-												Technical assistance will be provided by the professors of BITS whereas general assistance (nontechnical) will be provided by NGOs.
-											</p>
-
-											<p><strong>Evaluation during Mentorship phase:</strong> 
-												<ul class="list1 pad_bot1">
-													<li>The teams will be evaluated continuously during the mentorship phase.</li>
-													<li>They are expected to submit an intermediate report, and a final report, showing their progress in the project.</li>
-													<li>At the end of this phase, there will be a telephonic conference interview with the shortlisted participants. They will be interviewed by a panel consisting of a professor and a student related to the particular technical field.</li>
-													<li>The participants proceeding to the final round will be decided based on the weekly reports, feedback and the interview. The decision of the judges will be final and binding.</li>												
-												</ul>
-												Mentorship Phase ends on <strong>March 3rd, 2015</strong>. The teams are required to submit the final reports by <strong>March 4th, 2015</strong>.
-											</p>
-
-											<p>After this round, the 10 best teams will be selected for the final round which will be conducted during the technical festival <strong>APOGEE 2015.</strong><br>
-											</p>
-										</div> 
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back">
+										<h4>Presentation</h4>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="rest-result col-lg-6 col-sm-6 col-xs-12">
-						<div class="row rest-wrapper">
-							<img class="col-xs-12 rest-img" src="images/tech.jpg">
-							<div class="col-xs-12 rest-cvr">
-								<div class="rest-name">Final Round</div>
-							</div>
-							<div class="clearfix"> </div>
-							<div class="col-xs-12 rest-info">
-								<div class="rest-add">
-									<div id="notification" class="text-justify">
-										<span style="color: #c0392b;font-weight:800"></span>
-										<p>
-											<ul>
-												<li>The selected teams will have to submit a hardcopy of their report, and give a final presentation on their solutions in front of our Judges, during our event in APOGEE-2015, here at BITS PILANI.</li>
-												<li>The teams would be provided a maximum time of 10 minutes for their respective presentations followed by a 5 minutes round of cross-questioning by our Judging panel.</li>
-												<li>The presentation should cover all the details of the solution, namely, the idea, the methodology, cost-effectiveness, process of implementation, total cost which would be incurred for implementing the project, its feasibility and sustainability.</li>
-												<li>Along with the report and presentation, the finalists may come up with a working model of their solution, which explains their concept better, and hence, enhances clarity. (The best use you make of this, the more credit you shall be awarded).</li>
-											</ul>
-										</p>
-										<p><strong> Note: </strong> <br>The Mentorship phase will kick off as soon as the Abstract Phase (Phase 1) ends. The 30 shortlisted teams will be given an option of mentorship.
-										</p>
-									</div> 
+					</li>
+					<li>
+						<div class="ch-item ch-img-4">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-4"></div>
+									<div class="ch-info-back">
+										<h4>Implementation</h4>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="rest-result col-lg-6 col-sm-6 col-xs-12">
-						<div class="row rest-wrapper">
-							<img class="col-xs-12 rest-img" src="images/tech.jpg">
-							<div class="col-xs-12 rest-cvr">
-								<div class="rest-name">Wild Card Entry</div>
-							</div>
-							<div class="col-xs-12 rest-info">
-								<div class="rest-add">
-									<div class="text-justify" id="notification">
-										<span style="color: #c0392b;font-weight:800"></span>
-										<p>
-											<ul class="list1 pad_bot1">
-												<li>This is designed for those who missed the deadline and would still like to participate in the event. For this, participants must send in their final report to <a href="mailto:dhiti@bits-apogee.org" class="link1">dhiti@bits-apogee.org</a> by <strong>5th march 2015</strong>. If the project involves a model, a video showing the progress of the prototype also needs to be attached. </li>
-												<li>Teams entering through the wildcard will not be provided mentorship. Their final report will be judged by a panel of experts from BITS.</li>
-
-											</ul>
-										</p>
-										<p><strong>Dowload the Wild Card Report Format:</strong> <br>
-											<a href="documents/DHITI%20Final_Report%20Format.pdf" class="link1" target="blank">DHITI Final_Report Format.pdf</a> 
-										</p>
-									</div> 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //structure -->
-	<!-- contact -->
-	<div class="contact" id="contact">
-		<div class="container">
-			<h3 class="tittle">Register|Contact</h3>
-
-			<div class="col-md-7 contact-left">
-				<div class="main">
-					<div class="one">
-						<div class="register">
-							<h3>Create your account</h3>
-							<form id="reg-form">
-								<div>
-									<label for="name">Name</label>
-									<input type="text" id="name" spellcheck="false" placeholder="Shridhar Deshmukh"/>
-								</div>
-								<div>
-									<label for="email">Email</label>
-									<input type="text" id="email" spellcheck="false" placeholder="shridhardeshmukh@xyz.com"/>
-								</div>
-								<div>
-									<label for="username">Username</label>
-									<input type="text" id="username" spellcheck="false" placeholder="shree33" />
-								</div>
-								<div>
-									<label for="password">Password</label>
-									<input type="password" id="password" />
-								</div>
-								<div>
-									<label for="password-again">Password Again</label>
-									<input type="password" id="password-again" />
-								</div>
-								<div>
-									<label></label>
-									<input type="submit" value="Create Account" id="create-account" class="button"/>
-								</div>
-							</form>
-							<div class="sep">
-								<span class="or">OR</span>
-							</div>
-							<div class="connect">
-								<div class="social-buttons facebook">
-									<a href="#">
-										<span>Facebook</span>
-									</a>
-								</div>
-								<div class="social-buttons twitter">
-									<a href="#">
-										<span>Twitter</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5 contact-left">
-				<br>
-				<p>For Details Contact: </p>
-				<ul>
-					<li class="col2"><b>Mohit Saluja</b></li>
-					<li class="col2"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Phone:+91-7737931095</li>
-					<li class="col2"><a href="mailto:mohitsaluja2412@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>mohitsaluja2412@gmail.com</a></li><br>
-					<li class="col2"><b>Akhil nemani</b></li>
-					<li class="col2"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Phone:+91-9772225453</li>
-					<li class="col2"><a href="mailto:akhilnemani94@gmail.com" class="link1"<b>><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>akhilnemani94@gmail.com</a></li><br>
-					<li class="col2"><b>Yuganshu jain</b></li>
-					<li class="col2"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Phone:+91-9468837613</li>
-					<li class="col2"><a href="mailto:yuganshu.jain2306@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>yuganshu.jain2306@gmail.com</a></li><br><br>
-					<li class="col2"><b>E-mail Us at:</b></li>
-					<li class="col2"><a href="mailto:dhiti@bits-apogee.org" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>dhiti@bits-apogee.org</a></li>
+					</li>
 				</ul>
 			</div>
-			<div class="clearfix"> </div>
 		</div>
-
-	</div>
-</div>
-<!-- //contact -->
-<!-- footer -->
-<div class="footer">
-	<div class="container">
-		<div class="container">
-			<div class="footer-left">
-				<!-- <p>&copy; 2015 Corax. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p> -->
+		<!-- structure -->
+		<!-- contact -->
+		<div class="contact" id="contact">
+			<div class="container">
+				<h3 class="tittle">Contact</h3>
+				<div id="contact_Outcont">
+					<div class="contact_grp">
+						<div class="contact_grp">
+							<div class="contact_grp inner_contacts_cont">
+								<span><b>Mohit Saluja</b></span><br>
+								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-7737931095</br>
+								<a href="mailto:mohitsaluja2412@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>mohitsaluja2412@gmail.com</a>
+							</div>
+							<div class="contact_grp inner_contacts_cont">
+								<span><b>Akhil nemani</b></span><br>
+								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-9772225453</br>
+								<a href="mailto:akhilnemani94@gmail.com" class="link1"<b>><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>akhilnemani94@gmail.com</a>
+							</div>
+						</div>
+						<div class="contact_grp">
+							<div class="contact_grp inner_contacts_cont">
+								<span><b>Yuganshu jain</b></span><br>
+								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-9468837613</br>
+								<a href="mailto:yuganshu.jain2306@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>yuganshu.jain2306@gmail.com</a>
+							</div>
+						</div>
+					</div>
+					<div class="contact_grp">
+						<div class="contact_grp">
+							<div class="contact_grp inner_contacts_cont">
+								<span><b>E-mail Us at:</b><br></span>
+								<a href="mailto:dhiti@bits-apogee.org" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>dhiti@bits-apogee.org</a>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
 			</div>
-			<div class="footer-right">
-				<ul>
-					<li><a href="https://www.facebook.com/events/1427278730896086/" class="f1"></a></li>
-					<li><a href="#" class="f2"></a></li>
-					<li><a href="#" class="f3"></a></li>
-				</ul>
-			</div>
+			<!-- //contact -->
+			
 
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!-- //footer -->
-
-	<!-- Bootstrap core JavaScript-->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<!-- js -->
-	<script src="js/bootstrap.js"></script>
-	<!-- js -->
-	<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
+			<!-- Bootstrap core JavaScript-->
+			<!-- Placed at the end of the document so the pages load faster -->
+			<!-- js -->
+			<script src="js/bootstrap.js"></script>
+			<!-- js -->
+			<!-- smooth scrolling -->
+			<script type="text/javascript">
+				$(document).ready(function() {
 		/*
 			var defaults = {
 			containerID: 'toTop', // fading element id
@@ -667,69 +508,69 @@
 			*/								
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
-	</script>
-	<script type="text/javascript">
-		$("#r2").click(function() {
-			$("#r1c").delay(200).fadeOut();
-		}).click(function() {
-			$("#r1").delay(500).animate({
-				width: "5%",
-			}, {
-				duration: 500,
-				specialEasing: {
-					width: "linear",
-					height: "easeOutBounce"
-				}
-			});
-		}).click(function() {
-			$("#r2").delay(500).animate({
-				width: "90%",
-			}, {
-				duration: 500,
-				specialEasing: {
-					width: "linear",
-					height: "easeOutBounce"
-				}
-			});
-		}).click(function() {
-			$("#r2c").delay(1000).fadeIn();
-		}).click(function() {
-			$("#r2i").fadeOut();
-		}).click(function() {
-			$("#r1i").delay(1000).fadeIn();
-		});
-		$("#r1").click(function() {
-			$("#r2c").fadeOut();
-		}).click(function() {
-			$("#r2").delay(500).animate({
-				width: "5%",
-			}, {
-				duration: 500,
-				specialEasing: {
-					width: "linear",
-					height: "easeOutBounce"
-				}
-			});
-		}).click(function() {
-			$("#r1").delay(500).animate({
-				width: "90%",
-			}, {
-				duration: 500,
-				specialEasing: {
-					width: "linear",
-					height: "easeOutBounce"
-				}
-			});
-		}).click(function() {
-			$("#r1c").delay(1000).fadeIn();
-		}).click(function() {
-			$("#r1i").fadeOut();
-		}).click(function() {
-			$("#r2i").delay(1000).fadeIn();
-		});
-	</script>
-	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!-- //smooth scrolling -->
-</body>
-</html>
+			</script>
+			<script type="text/javascript">
+				$("#r2").click(function() {
+					$("#r1c").delay(200).fadeOut();
+				}).click(function() {
+					$("#r1").delay(500).animate({
+						width: "5%",
+					}, {
+						duration: 500,
+						specialEasing: {
+							width: "linear",
+							height: "easeOutBounce"
+						}
+					});
+				}).click(function() {
+					$("#r2").delay(500).animate({
+						width: "90%",
+					}, {
+						duration: 500,
+						specialEasing: {
+							width: "linear",
+							height: "easeOutBounce"
+						}
+					});
+				}).click(function() {
+					$("#r2c").delay(1000).fadeIn();
+				}).click(function() {
+					$("#r2i").fadeOut();
+				}).click(function() {
+					$("#r1i").delay(1000).fadeIn();
+				});
+				$("#r1").click(function() {
+					$("#r2c").fadeOut();
+				}).click(function() {
+					$("#r2").delay(500).animate({
+						width: "5%",
+					}, {
+						duration: 500,
+						specialEasing: {
+							width: "linear",
+							height: "easeOutBounce"
+						}
+					});
+				}).click(function() {
+					$("#r1").delay(500).animate({
+						width: "90%",
+					}, {
+						duration: 500,
+						specialEasing: {
+							width: "linear",
+							height: "easeOutBounce"
+						}
+					});
+				}).click(function() {
+					$("#r1c").delay(1000).fadeIn();
+				}).click(function() {
+					$("#r1i").fadeOut();
+				}).click(function() {
+					$("#r2i").delay(1000).fadeIn();
+				});
+			</script>
+			<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			<!-- //smooth scrolling -->
+		</body>
+		</html>
