@@ -43,6 +43,7 @@ ul{
   margin:0;
   padding:0;
 }
+
 label{
   margin:0;
 }
@@ -417,13 +418,12 @@ a.callbacks_nav.callbacks2_nav.next {
 }
 .nav > li > a {
   text-align:center;
-  font-size:16px;
+  font-size:32px;
   position: relative;
   padding: 9px 22px !important;
 }
 .social-icons {
   float: right;
-  margin-top: 28px;
 }
 .social-icons ul li {
   margin-left: 3px;
@@ -560,13 +560,16 @@ a.callbacks_nav.callbacks2_nav.next {
   background-color: #eaeaea;
 }
 .team{
-  background-color: #fff;
+  background-color: #84939a;;
+}
+.team ul{
+  list-style-type:none !important;
 }
 .services{
   padding-top:90px;
 }
 .services{
-  background: url(../images/tech.jpg) no-repeat 0px 0px;
+  background: url(../images/banner4.jpg) no-repeat 0px 0px;
   background-size:cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -580,9 +583,6 @@ h3.tittle,h2.tittle{
   font-size:52px;
   color:#cc7421;
   margin-bottom: 50px;
-}
-h3.tittle.t-team{
-  color:#fff;
 }
 h3.tittle:after, h3.tittle:before {
   width: 120px;
@@ -1003,26 +1003,46 @@ h2.tittle:after, h2.tittle:before {
   background: rgba(230,132,107,0);
 }
 
-/*.ch-img-1 { 
-  background-image: url(../images/16.jpg);
+.ch-img-1 { 
+  background-image: url(../images/1.jpg);
 }
 
 .ch-img-2 { 
-  background-image: url(../images/17.jpg);
+  background-image: url(../images/2.jpg);
 }
 
 .ch-img-3 { 
-  background-image: url(../images/18.jpg);
+  background-image: url(../images/3.jpg);
 }
 .ch-img-4{ 
-  background-image: url(../images/19.jpg);
-}*/
+  background-image: url(../images/4.jpg);
+}
+.sb{
+  width: 162px !important;
+  height: 162px !important;
+  margin: 0px !important;
+}
+.popover-example { 
+  margin: 0 0 10px;
+  list-style: none;
+}
+.popover-example li{
+  display: inline-block;
+  margin: 4px;
+  padding: 0px;
+}
+.btn:focus{
+  outline: none;
+}
+.modExample .btn{
+    margin: 4px 8px 4px 0;
+}
+
 .ch-info h4{
   font-family: 'Tahoma';
   color: #DF1E1C;
   letter-spacing: 2px;
-  font-size: 30px;
-  margin: 0 18px;
+  font-size: 17px;
   padding: 40px 0 0 0;
 }
 .ch-info p {

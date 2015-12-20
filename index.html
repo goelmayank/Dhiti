@@ -26,6 +26,8 @@
 			});
 		});
 	</script>
+	<script src="js/structure.js"></script>
+	<script src="js/jquery.chocolat.js"></script>
 	<!-- start-smoth-scrolling -->
 </head>
 <body>
@@ -38,7 +40,12 @@
 				<img src="images/nss-logo.png" style="width: 10vw;">
 			</div>
 			<div class="header-right">
-				<div id="my-signin2"></div>
+				<ul>
+					<li><a class="scroll" href="#contact">Contact</a></li>
+					<li>|</li>
+					<!-- <li><a class="scroll" href="#">Register</a></li> -->
+				</ul>
+				<div id="my-signin2 scroll"></div>
 				<script>
 					function onSuccess(googleUser) {
 						console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
@@ -58,20 +65,6 @@
 						});
 					}
 				</script>
-				<!-- <a href="#" class="scroll" onclick="signOut();">Sign out</a> -->
-				<script>
-					function signOut() {
-						var auth2 = gapi.auth2.getAuthInstance();
-						auth2.signOut().then(function () {
-							console.log('User signed out.');
-						});
-					}
-				</script>
-				<ul>
-					<li><a class="scroll" href="#contact">Contact</a></li>
-					<li>|</li>
-					<li><a class="scroll" href="#">Register</a></li>
-				</ul>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -95,11 +88,11 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="hvr-bounce-to-bottom button"><a href="#structure" class="scroll">Structure</a></li>
 						<li class="hvr-bounce-to-bottom button"><a href="#about" class="scroll">About</a></li>
-						<li class="hvr-bounce-to-bottom button"><a href="#gallery" class="scroll">Problem Categories</a></li>
-						<li class="hvr-bounce-to-bottom button"><a href="#services" class="scroll"> FAQs</a></li>
-						<li class="hvr-bounce-to-bottom button"><a href="#Guidelines" class="scroll"> Guidelines</a></li>					
+						<li class="hvr-bounce-to-bottom button"><a href="#structure" class="scroll">Structure</a></li>
+						<li class="hvr-bounce-to-bottom button"><a href="#gallery" class="scroll">Problem Statements</a></li>
+						<li class="hvr-bounce-to-bottom button"><a href="#Guidelines" class="scroll">Guidelines</a></li>
+						<li class="hvr-bounce-to-bottom button"><a href="#FAQs" class="scroll">FAQs</a></li>
 					</ul>
 					<div class="social-icons">
 						<ul>
@@ -117,7 +110,50 @@
 	<!-- //navigation -->
 	<!-- banner -->
 	<div class="banner">
-		
+		<div class="container">
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+				$(function () {
+					$("#slider3").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});
+				});
+			</script>
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-info">
+							<h4>Last date for Abstract Submission<br/><t><t>January 10th, 2016</h4>             
+						</div>
+					</li>
+					<li>
+						<div class="banner-info">
+							<h4>Mentorship Kicks off!<br/><t><t>20th January OR As soon as your abstract is selected (whichever is earlier).</h4>            
+						</div>
+					</li>
+					<li>
+						<div class="banner-info">
+							<h4>Submission of final report <br/><t><t>31st January , 2016</h4>            
+						</div>
+					</li>
+					<li>
+						<div class="banner-info">
+							<h4>Presentation in Apogee, technical festival of BITS Pilani <br/><t><t>February 25th – 28th , 2016</h4>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<!-- //banner -->
 	<!-- about -->
@@ -138,8 +174,275 @@
 		</div>
 	</div>
 	<!-- //about -->
-	<!-- services -->
-	<div id="services" class="services">
+	<!-- structure -->
+	<div id="stucture" class="team">
+		<div class="container">
+			<h3 class="tittle t-team">Structure</h3>
+			<ul class="ch-grid"> 
+				<li>
+					<div class="ch-item ch-img-1">				
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-1"></div>
+								<div class="ch-info-back" >
+									<a href="#myModal1" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Abstract<br>Submission</h4></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-2"></div>
+								<div class="ch-info-back">
+									<a href="#myModal2" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Mentorship</h4></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-3"></div>
+								<div class="ch-info-back">
+									<a href="#myModal3" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Implementation</h4></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-4"></div>
+								<div class="ch-info-back">
+									<a href="#myModal4" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Presentation</h4></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div id="myModal1" class="modal" data-easein="fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" id="myModalLabel">Abstract Submission</h4>
+						</div>
+						<div class="modal-body">
+							<p class="text-justify">Teams of maximum 4 students can participate in the event. A pool of problem statements in these specific areas – Agriculture, Water, Resource Optimization, Health, etc. has been uploaded.</p>
+							<p class="text-justify">Participants can either Take up any one problem statement from those given under different specific areas and suggest a technically and financially sound solution. (From Given Problem Pool)</p>
+							<p>OR</p>
+							<p class="text-justify">Work on a problem identified by them in any given specific area and present a technically and financially feasible solution. (Open Category)</p>
+						</div>
+						<div class="modal-footer">
+							<a href="documents/ABSTRACT(template).pdf" class="link1">Download the Abstract Template.</a></strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="myModal2" class="modal" data-easein="flipXIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title">Mentorship</h4>
+						</div>
+						<div class="modal-body">
+							<p class="text-justify">The Mentorship phase will kick off as soon as the results of the Abstract Phase are declared. Shortlisted teams will be given an option of mentorship.</p>
+							<p class="text-justify"> We consider mentorship essential for the participants so as to give them an insight of the exact problems that are faced at the grassroots, of the situations and the constraints that may be involved during the implementation of these solutions. Mentorship will be provided in the following two forms:
+								<ul> 
+									<li class="text-justify">Technical assistance to the participants (without changing the basic idea of the solution), if required.</li>
+									<li class="text-justify">Assistance in getting a clearer idea regarding the problem statement which will help the participants to arrive at a more suitable and feasible solution to the problem.</li>
+								</ul>
+							</p>
+							<p class="text-justify">Assistance will be provided by the professors of BITS and selected NGOs. The allotment of mentors will be based on the category and appropriateness of the solution.</p>
+							<p class="text-justify"> Evaluation during Mentorship phase: 
+								<ul>
+									<li class="text-justify">The teams will be evaluated continuously during the mentorship phase.</li>
+									<li class="text-justify">They are expected to submit an intermediate report, and a final report, showing their progress in the project.</li>
+									<li class="text-justify">At the end of this phase, there will be a telephonic conference interview with the shortlisted participants. They will be interviewed by a panel consisting of a professor and a student related to the particular technical field. </li>
+									<li class="text-justify">The participants proceeding to the final round will be decided based on the weekly reports, feedback and the interview. The decision of the judges will be final and binding.</li>
+								</ul>
+							</p>
+						</div>
+						<div class="modal-footer">
+							<p class="text-justify">Mentorship Phase ends on February 4th, 2015. The teams are required to submit the final reports by February 5th, 2015. </p>
+							<p class="text-justify">After this round, 10 teams will be selected for the final round which will be conducted during the technical festival APOGEE 2015.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="myModal3" class="modal" data-easein="flipYIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<div class="view view-eighth">
+								<h4 class="modal-title">Presentation</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									<ul>
+										<li class="text-justify">The selected teams will have to submit a hardcopy of their report, and give a final presentation on their solutions in front of our Judges, during our event in APOGEE-2015, here at BITS PILANI. </li>
+										<li class="text-justify">The teams would be provided a maximum time of 10 minutes for their respective presentations followed by a 5 minutes round of cross-questioning by our Judging panel.</li>
+										<li class="text-justify">The presentation should cover all the details of the solution, namely, the idea, the methodology, cost-effectiveness, process of implementation, total cost which would be incurred for implementing the project, its feasibility and sustainability.</li>
+										<li class="text-justify"> Along with the report and presentation, the finalists may come up with a working model of their solution, which explains their concept better, and hence, enhances clarity. (The best use you make of this, the more credit you shall be awarded).</li>
+										<li class="text-justify"> The Jury’s decision shall be deemed final and binding.</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="myModal4" class="modal" data-easein="flipBounceXIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title">Implementation</h4>
+						</div>
+						<div class="modal-body">
+							<p class="text-justify">The last phase will involve implementation of the solutions. Some projects (from those selected for the final round) will be carried out at the ground level, with help from the concerned NGOs in as many ways as possible. This might take the form of an internship based on the preferences of the organization and the students</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- structure -->
+	<!-- gallery -->
+	<div id="gallery" class="gallery">
+		<div class="container">
+			<h3 class="tittle">Problem Statements</h3>
+			<div class="gallery-grids">
+				<!-- EIGHTH EXAMPLE -->
+				<div class="view view-eighth">
+					<a href="images/g1.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g1.jpg" alt="" />
+						<div class="mask">
+							<h4>Design</h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="images/g2.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g2.jpg" alt="" />
+						<div class="mask">
+							<h4>Education</h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="images/g3.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g3.jpg" alt="" />
+						<div class="mask">
+							<h4>Safety</h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="images/g4.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g4.jpg" alt="" />
+						<div class="mask">
+							<h4>Diability</h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="images/g5.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g5.jpg" alt="" />
+						<div class="mask">
+							<h4>Renewable Energy</h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="images/g6.png" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g6.png" alt="" />
+						<div class="mask">
+							<h4>Water </h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="images/g7.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g7.jpg" alt="" />
+						<div class="mask">
+							<h4>Peace </h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="images/g8.png" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g8.png" alt="" />
+						<div class="mask">
+							<h4>NEW!! </h4>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth" id="9">
+					<a href="images/g9.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g9.jpg" alt="" />
+						<div class="mask">
+							<h4>Sample Open Problems </h4>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!--light-box-files -->
+			<script type="text/javascript">
+				$(function() {
+					$('.gallery a').Chocolat();
+				});
+			</script>
+
+		</div>
+	</div>
+	<!-- //gallery -->
+	<!-- Rules and guidelines -->
+	<div id="Guidelines" class="team">
+		<div class="container">
+			<h3 class="tittle t-team">Rules and guidelines</h3>
+			<div id="r1" class="r1">
+				<img id="r1i" src="images/1r.png" style="display: none;" />
+				<div id="r1c" class="r1c">
+					<h4>General Guidelines</h4><br>
+					<ul>
+						<li class="text-justify" class="text-justify">The competition is open to all students and research scholars.</li>
+						<li class="text-justify">Teams of <strong> maximum 4</strong> can participate in the event. The participants can be from different colleges.</li>
+						<li class="text-justify">All participants are required to register on the Apogee 2015 website  <a href="http://www.bits-apogee.org/" class="link1">www.bits-apogee.org</a> , and register for DHITI.</li>
+						<li class="text-justify">The teams must submit their abstracts by <strong>4th february, 2015</strong>.</li>
+						<li class="text-justify"><b><u>Wild Card Round:</u></b> The teams who have missed the deadline and would like to participate, have the chance to enter via the wildcard round. For this, participants must send in their final report to <a href="mailto:dhiti@bits-apogee.org" class="link1">dhiti@bits-apogee.org</a> by 6th March. If the project involves a model, a video showing the progress of the prototype also needs to be attached. Teams entering through the wildcard will not be provided mentorship. Their final report will be judged by a panel of expert from BITS.</li>
+						<li class="text-justify">Best <strong>30 teams</strong> out of all the entries will be selected.The selected teams will be notified.</li>
+						<li class="text-justify">Decision of the judges shall be treated as final and binding on all.</li>
+						<li class="text-justify">At any point of time the latest information will be that which is on the website.However, registered participants will be informed through mail about any changes on the website.</li>	
+						<li class="text-justify">The ideas presented by the teams should be original. Plagiarism of any kind will lead to disqualification of the team.</li>
+						<li class="text-justify">Certification – Shortlisted teams that present their solution in the final round in Apogee 2016 will receive a Participation. The best solutions will be appropriate certificates of distinction along with prizes.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="r2" class="r2">
+				<img id="r2i" src="images/2r.png"/>
+				<div id="r2c" class="r2c">
+					<h4>Judging Criteria</h4><br />
+					<ul>
+						<li class="text-justify"><strong>Unique and innovative:</strong> They can be a modification of an already existing solution but should not be an exact replica of it.</li>
+						<li class="text-justify"><strong>Effective:</strong> They must provide better results than solutions which are already in use.</li>
+						<li class="text-justify"><strong>Cost-effective:</strong> For this the materials being used should be easily available and cheap.</li>
+						<li class="text-justify"><strong>Feasible:</strong> Keep in mind the target population/region. The ease of installation and the easy availability of the resources is also to be considered.</li>
+						<li class="text-justify"><strong>Sustainable:</strong> The solutions should be designed in such a way that they can be easily modified in future to adapt to the need and conditions of that time.</li>
+						<li class="text-justify"><strong>Social Impact:</strong> Should have a large social impact. It should affect the living conditions of a large number of people rather than only a few.</li>
+						<li class="text-justify"><strong>Replicable:</strong> Easily replicable so that they can be implemented over different regions rather than addressing a problem in a particular area only.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Rules and guidelines -->
+	<!-- FAQs -->
+	<div id="FAQs" class="services">
 		<div class="container">
 			<h2 class="tittle">FAQs</h2>
 			<div class="services-grids">
@@ -237,272 +540,54 @@
 			</div>
 		</div>
 	</div>
-	<!-- //services -->
-	<!-- Rules and guidelines -->
-	<div id="Guidelines" class="team">
+	<!-- //FAQs -->
+	<!-- contact -->
+	<div class="contact" id="contact">
 		<div class="container">
-			<h3 class="tittle t-team">Rules and guidelines</h3>
-			<div id="r1" class="r1">
-				<img id="r1i" src="images/1r.png" style="display: none;" />
-				<div id="r1c" class="r1c">
-					<h4>General Guidelines</h4><br>
-					<ul>
-						<li>The competition is open to all students and research scholars.</li>
-						<li>Teams of <strong> maximum 4</strong> can participate in the event. The participants can be from different colleges.</li>
-						<li>All participants are required to register on the Apogee 2015 website  <a href="http://www.bits-apogee.org/" class="link1">www.bits-apogee.org</a> , and register for DHITI.</li>
-						<li>The teams must submit their abstracts by <strong>4th february, 2015</strong>.</li>
-						<li><b><u>Wild Card Round:</u></b> The teams who have missed the deadline and would like to participate, have the chance to enter via the wildcard round. For this, participants must send in their final report to <a href="mailto:dhiti@bits-apogee.org" class="link1">dhiti@bits-apogee.org</a> by 6th March. If the project involves a model, a video showing the progress of the prototype also needs to be attached. Teams entering through the wildcard will not be provided mentorship. Their final report will be judged by a panel of expert from BITS.</li>
-						<li>Best <strong>30 teams</strong> out of all the entries will be selected.The selected teams will be notified.</li>
-						<li>Decision of the judges shall be treated as final and binding on all.</li>
-						<li>At any point of time the latest information will be that which is on the website.However, registered participants will be informed through mail about any changes on the website.</li>	
-					</ul>
-					<br><br>
-					<h4>Judging Criteria</h4><br />
-					<ul>
-						<li><strong>Unique and innovative:</strong> They can be a modification of an already existing solution but should not be an exact replica of it.</li>
-						<li><strong>Effective:</strong> They must provide better results than solutions which are already in use.</li>
-						<li><strong>Cost-effective:</strong> For this the materials being used should be easily available and cheap.</li>
-						<li><strong>Feasible:</strong> Keep in mind the target population/region. The ease of installation and the easy availability of the resources is also to be considered.</li>
-						<li><strong>Sustainable:</strong> The solutions should be designed in such a way that they can be easily modified in future to adapt to the need and conditions of that time.</li>
-						<li><strong>Social Impact:</strong> Should have a large social impact. It should affect the living conditions of a large number of people rather than only a few.</li>
-						<li><strong>Replicable:</strong> Easily replicable so that they can be implemented over different regions rather than addressing a problem in a particular area only.</li>
-						<li><strong>Socially acceptable and environmentally benign.</strong></li>																			
-					</ul>
-				</div>
-			</div>
-			<div id="r2" class="r2">
-				<img id="r2i" src="images/2r.png"/>
-				<div id="r2c" class="r2c">
-					<h2>Abstract Submission</h2>
-					<p>The abstract should be mailed to <strong> dhiti@bits-apogee.org </strong> with the subject <strong>Dhiti Abstract : [Title of the Project]</strong>.<br>The abstracts should contain:</p>
-					<p>
-						<ul>
-							<li>Name of the college</li>
-							<li>Name of the team leader and team members</li>
-							<li>Contact number and mail id of the team leader</li>
-							<li>Area of the project (from the list mentioned)</li>
-							<li>Title of the project</li>
-							<li>Problem Statement: State the problem existing in the society which is targeted by  the project.</li>
-							<li>Objective</li>
-							<li>Short description about the project (Not more than 100 words)</li>
-							<li>Productive value addition: Explain what productive value addition is going to take place due to the project</li>
-							<li>Cost effectiveness and feasibility of solution.</li>
-
-						</ul><br>
-						Teams must follow the following specifications while submitting their abstractabstracts:
-						<ul>
-							<li>The abstract must be submitted in pdf format only</li>
-							<li>The abstract must not exceed 6 pages in length</li>
-							<li>Font: Verdana</li>
-							<li>Size: 11</li>
-							<li>Spacing between two lines: 0.6 inch</li>
-							<li>Spacing between two paragraphs: 1 inch</li>																			
-						</ul>
-					</p>
-
-					<p><strong>
-						<a href="documents/ABSTRACT(template).pdf" class="link1">Download the Abstract Template.</a></strong></p>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- //Rules and guidelines -->
-		<!-- gallery -->
-		<div id="gallery" class="gallery">
-			<div class="container">
-				<h3 class="tittle">Problem Statements</h3>
-				<div class="gallery-grids">
-					<!-- EIGHTH EXAMPLE -->
-					<div class="view view-eighth">
-						<a href="images/g1.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g1.jpg" alt="" />
-							<div class="mask">
-								<h4>Design</h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth">
-						<a href="images/g2.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g2.jpg" alt="" />
-							<div class="mask">
-								<h4>Education</h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth">
-						<a href="images/g3.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g3.jpg" alt="" />
-							<div class="mask">
-								<h4>Safety</h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth">
-						<a href="images/g4.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g4.jpg" alt="" />
-							<div class="mask">
-								<h4>Diability</h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth">
-						<a href="images/g5.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g5.jpg" alt="" />
-							<div class="mask">
-								<h4>Renewable Energy</h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth">
-						<a href="images/g6.png" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g6.png" alt="" />
-							<div class="mask">
-								<h4>Water </h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth">
-						<a href="images/g7.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g7.jpg" alt="" />
-							<div class="mask">
-								<h4>Peace </h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth">
-						<a href="images/g8.png" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g8.png" alt="" />
-							<div class="mask">
-								<h4>NEW!! </h4>
-							</div>
-						</a>
-					</div>
-					<div class="view view-eighth" id="9">
-						<a href="images/g9.jpg" class="b-link-stripe b-animate-go  thickbox"  title="Image Title"><img src="images/g9.jpg" alt="" />
-							<div class="mask">
-								<h4>Sample Open Problems </h4>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<script src="js/jquery.chocolat.js"></script>
-
-				<!--light-box-files -->
-				<script type="text/javascript">
-					$(function() {
-						$('.gallery a').Chocolat();
-					});
-				</script>
-
-			</div>
-		</div>
-		<!-- //gallery -->
-		<!-- structure -->
-		<div id="stucture" class="team">
-			<div class="container">
-				<h3 class="tittle t-team">Structure</h3>
-				<ul class="ch-grid"> 
-					<li>
-						<div class="ch-item ch-img-1">				
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-1"></div>
-									<div class="ch-info-back" >
-										<a href="images/s1.png" class="b-link-stripe b-animate-go  thickbox"  title="Abstract Submission"><img src="images/s-1.png" alt="Abstract Submission" />
-									</div>	
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-2">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-2"></div>
-									<div class="ch-info-back">
-										<a href="images/s2.png" class="b-link-stripe b-animate-go  thickbox"  title="Mentorship"><img src="images/s-2.png" alt="Mentorship" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-3">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-3"></div>
-									<div class="ch-info-back">
-										<a href="images/s3.png" class="b-link-stripe b-animate-go  thickbox"  title="Presentation"><img src="images/s-3.png" alt="Presentation" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-4">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-4"></div>
-									<div class="ch-info-back">
-										<a href="images/s4.png" class="b-link-stripe b-animate-go  thickbox"  title="Implementation"><img src="images/s-4.png" alt="Implementation" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!--light-box-files -->
-				<script type="text/javascript">
-					$(function() {
-						$('.ch-item a').Chocolat();
-					});
-				</script>
-		<!-- structure -->
-		<!-- contact -->
-		<div class="contact" id="contact">
-			<div class="container">
-				<h3 class="tittle">Contact</h3>
-				<div id="contact_Outcont">
+			<h3 class="tittle">Contact</h3>
+			<div id="contact_Outcont">
+				<div class="contact_grp">
 					<div class="contact_grp">
-						<div class="contact_grp">
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>Mohit Saluja</b></span><br>
-								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-7737931095</br>
-								<a href="mailto:mohitsaluja2412@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>mohitsaluja2412@gmail.com</a>
-							</div>
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>Akhil nemani</b></span><br>
-								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-9772225453</br>
-								<a href="mailto:akhilnemani94@gmail.com" class="link1"<b>><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>akhilnemani94@gmail.com</a>
-							</div>
+						<div class="contact_grp inner_contacts_cont">
+							<span><b>Mohit Saluja</b></span><br>
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-7737931095</br>
+							<a href="mailto:mohitsaluja2412@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>mohitsaluja2412@gmail.com</a>
 						</div>
-						<div class="contact_grp">
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>Yuganshu jain</b></span><br>
-								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-9468837613</br>
-								<a href="mailto:yuganshu.jain2306@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>yuganshu.jain2306@gmail.com</a>
-							</div>
+						<div class="contact_grp inner_contacts_cont">
+							<span><b>Akhil nemani</b></span><br>
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-9772225453</br>
+							<a href="mailto:akhilnemani94@gmail.com" class="link1"<b>><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>akhilnemani94@gmail.com</a>
 						</div>
 					</div>
 					<div class="contact_grp">
-						<div class="contact_grp">
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>E-mail Us at:</b><br></span>
-								<a href="mailto:dhiti@bits-apogee.org" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>dhiti@bits-apogee.org</a>
-							</div>
+						<div class="contact_grp inner_contacts_cont">
+							<span><b>Yuganshu jain</b></span><br>
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-9468837613</br>
+							<a href="mailto:yuganshu.jain2306@gmail.com" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>yuganshu.jain2306@gmail.com</a>
 						</div>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
+				<div class="contact_grp">
+					<div class="contact_grp">
+						<div class="contact_grp inner_contacts_cont">
+							<span><b>E-mail Us at:</b><br></span>
+							<a href="mailto:dhiti@bits-apogee.org" class="link1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>dhiti@bits-apogee.org</a>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
 			</div>
-			<!-- //contact -->
-			
-
-			<!-- Bootstrap core JavaScript-->
-			<!-- Placed at the end of the document so the pages load faster -->
-			<!-- js -->
-			<script src="js/bootstrap.js"></script>
-			<!-- js -->
-			<!-- smooth scrolling -->
-			<script type="text/javascript">
-				$(document).ready(function() {
+		</div>
+	</div>
+	<!-- //contact -->
+	<!-- Bootstrap core JavaScript-->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- js -->
+	<script src="js/bootstrap.js"></script>
+	<!-- js -->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
 		/*
 			var defaults = {
 			containerID: 'toTop', // fading element id
@@ -513,69 +598,10 @@
 			*/								
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
-			</script>
-			<script type="text/javascript">
-				$("#r2").click(function() {
-					$("#r1c").delay(200).fadeOut();
-				}).click(function() {
-					$("#r1").delay(500).animate({
-						width: "5%",
-					}, {
-						duration: 500,
-						specialEasing: {
-							width: "linear",
-							height: "easeOutBounce"
-						}
-					});
-				}).click(function() {
-					$("#r2").delay(500).animate({
-						width: "90%",
-					}, {
-						duration: 500,
-						specialEasing: {
-							width: "linear",
-							height: "easeOutBounce"
-						}
-					});
-				}).click(function() {
-					$("#r2c").delay(1000).fadeIn();
-				}).click(function() {
-					$("#r2i").fadeOut();
-				}).click(function() {
-					$("#r1i").delay(1000).fadeIn();
-				});
-				$("#r1").click(function() {
-					$("#r2c").fadeOut();
-				}).click(function() {
-					$("#r2").delay(500).animate({
-						width: "5%",
-					}, {
-						duration: 500,
-						specialEasing: {
-							width: "linear",
-							height: "easeOutBounce"
-						}
-					});
-				}).click(function() {
-					$("#r1").delay(500).animate({
-						width: "90%",
-					}, {
-						duration: 500,
-						specialEasing: {
-							width: "linear",
-							height: "easeOutBounce"
-						}
-					});
-				}).click(function() {
-					$("#r1c").delay(1000).fadeIn();
-				}).click(function() {
-					$("#r1i").fadeOut();
-				}).click(function() {
-					$("#r2i").delay(1000).fadeIn();
-				});
-			</script>
-			<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			<!-- //smooth scrolling -->
-		</body>
-		</html>
+	</script>
+	<script type="text/javascript" src="js/guidelines.js"></script>
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+</body>
+</html>
