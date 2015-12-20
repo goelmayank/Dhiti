@@ -41,36 +41,36 @@
 				<img src="images/nss-logo.png" style="width: 10vw;">
 			</div>
 			<div class="header-right">
+				<div id="my-signin2"></div>
+				<script>
+					function onSuccess(googleUser) {
+						console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+					}
+					function onFailure(error) {
+						console.log(error);
+					}
+					function renderButton() {
+						gapi.signin2.render('my-signin2', {
+							'scope': 'https://www.googleapis.com/auth/plus.login',
+							'width': 200,
+							'height': 50,
+							'longtitle': true,
+							'theme': 'dark',
+							'onsuccess': onSuccess,
+							'onfailure': onFailure
+						});
+					}
+				</script>
+				<!-- <a href="#" class="scroll" onclick="signOut();">Sign out</a> -->
+				<script>
+					function signOut() {
+						var auth2 = gapi.auth2.getAuthInstance();
+						auth2.signOut().then(function () {
+							console.log('User signed out.');
+						});
+					}
+				</script>
 				<ul>
-					<div id="g-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
-					<script>
-						function onSuccess(googleUser) {
-							console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-						}
-						function onFailure(error) {
-							console.log(error);
-						}
-						function renderButton() {
-							gapi.signin2.render('my-signin2', {
-								'scope': 'https://www.googleapis.com/auth/plus.login',
-								'width': 200,
-								'height': 50,
-								'longtitle': true,
-								'theme': 'dark',
-								'onsuccess': onSuccess,
-								'onfailure': onFailure
-							});
-						}
-					</script>
-					<!-- <a href="#" class="scroll" onclick="signOut();">Sign out</a> -->
-					<script>
-						function signOut() {
-							var auth2 = gapi.auth2.getAuthInstance();
-							auth2.signOut().then(function () {
-								console.log('User signed out.');
-							});
-						}
-					</script>
 					<li><a class="scroll" href="#contact">Contact|Register</a></li>
 				</ul>
 			</div>
