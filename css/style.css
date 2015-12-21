@@ -335,11 +335,10 @@ a.callbacks_nav.callbacks2_nav.next {
 }
 .header-right ul {
   position: relative;
-  right: 20px;
+  right: 74px;
 }
 .header-right div {
-  position: relative;
-  bottom: 18px;
+  bottom: 38px;
   left: 47px;
 }
 .header-right ul li{
