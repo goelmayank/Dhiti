@@ -578,8 +578,7 @@ a.callbacks_nav.callbacks2_nav.next {
     padding-top:90px;
   }
   .services{
-    background: url(../images/banner4.jpg) no-repeat 0px 0px;
-    background-size:cover;
+    background-color: #fafafa;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
@@ -621,7 +620,7 @@ a.callbacks_nav.callbacks2_nav.next {
     font-weight:600;
   }
   .ser-top p{
-    color: #cdcdcd;
+    color: #000;
     font-size: 14px;
     line-height: 2em;
     margin: 25px 0 0 0;
