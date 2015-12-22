@@ -360,6 +360,9 @@ h2.tittle:after, h2.tittle:before {
  top: 0;
  left: 0;
 }
+/*.mask p{
+  z-index: 100;
+}*/
 .view img {
   width: 100%;
   display: block;
