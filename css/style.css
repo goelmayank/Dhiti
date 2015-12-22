@@ -146,6 +146,9 @@ label{
 .team ul{
   list-style-type:none !important;
 }
+.modal-body ul{
+  list-style-type:disc !important;
+}
 .services{
   padding-top:90px;
 }
