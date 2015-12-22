@@ -35,7 +35,7 @@ input[type="button"],input[type="submit"]{
   top: -43px;
   background: #4dc47d;
   margin: 3em 0 0 0;
-  padding:0 11em 0 0em;
+  padding:0 3em 0 3em;
 }
 @font-face {
  font-family: 'Tahoma';
