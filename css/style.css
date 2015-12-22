@@ -32,8 +32,8 @@ input[type="button"],input[type="submit"]{
   padding:0 3em 0 3em;
 }
 @font-face {
- font-family: 'Roboto-Black';
- src: url(../fonts/Roboto-Black.ttf)format('truetype');
+ font-family: 'Roboto-Regular';
+ src: url(../fonts/Roboto-Regular.ttf)format('truetype');
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -155,7 +155,7 @@ label{
   min-height: 590px;
 }
 h3.tittle,h2.tittle{
-  font-family: 'Roboto-Black';
+  font-family: 'Roboto-Regular';
   text-align:center;
   font-size:52px;
   color:#cc7421;
@@ -630,7 +630,7 @@ h4.modal-title {
 }
 
 .ch-info h4{
-  font-family: 'Roboto-Black';
+  font-family: 'Roboto-Regular';
   color: #DF1E1C;
   letter-spacing: 2px;
   font-size: 17px;
