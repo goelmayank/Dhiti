@@ -362,24 +362,24 @@ h2.tittle:after, h2.tittle:before {
 }
 /*.mask p{
   z-index: 100;
-}*/
-.view img {
-  width: 100%;
-  display: block;
-  position: relative;
-}
-.view h4{
- text-transform: uppercase;
- color: #fff;
- text-align: center;
- position: relative;
- font-size: 20px;
- font-weight: 600;
- padding: 10px;
- background: rgba(0, 0, 0, 0.8);
- margin: 40px 0 0 0;
-}
-.view p {
+  }*/
+  .view img {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  .view h4{
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 20px;
+   font-weight: 600;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 40px 0 0 0;
+ }
+ .view p {
   font-size: 13px;
   line-height: 2em;
   position: relative;
@@ -497,6 +497,9 @@ h2.tittle:after, h2.tittle:before {
   color: white;
   background: #000;
 }
+.r1c h4 {
+  text-align: center;
+}
 .r2{
   background: white;
   color: #000;
@@ -509,6 +512,9 @@ h2.tittle:after, h2.tittle:before {
   color:black;
   display: none;
   text-align: justify;
+}
+.r2c h4 {
+  text-align: center;
 }
 #r1i, #r2i{cursor:pointer;}
 /*-- //guidelines --*/
@@ -604,6 +610,14 @@ h2.tittle:after, h2.tittle:before {
   height: 162px !important;
   margin: 0px !important;
 }
+.gb{
+  width: 340px !important;
+  height: 263px !important;
+  margin: 0px !important;
+}
+h4.modal-title {
+  text-align: center;
+}
 .popover-example { 
   margin: 0 0 10px;
   list-style: none;
@@ -686,10 +700,9 @@ h2.tittle:after, h2.tittle:before {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  min-width: 180px;
 }
 .inner_contacts_cont{
-  margin: 15px;
+  padding: 20px;
   text-align: left;
 }
 .inner_contacts_cont > span{
