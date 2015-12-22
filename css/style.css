@@ -1,9 +1,3 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 html, body{
   margin:0;
   font-size: 100%;
@@ -38,8 +32,8 @@ input[type="button"],input[type="submit"]{
   padding:0 3em 0 3em;
 }
 @font-face {
- font-family: 'Tahoma';
- src: url(../fonts/Tahoma.ttf)format('truetype');
+ font-family: 'Roboto-Black';
+ src: url(../fonts/Roboto-Black.ttf)format('truetype');
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -161,7 +155,7 @@ label{
   min-height: 590px;
 }
 h3.tittle,h2.tittle{
-  font-family: 'Tahoma';
+  font-family: 'Roboto-Black';
   text-align:center;
   font-size:52px;
   color:#cc7421;
@@ -614,6 +608,7 @@ h2.tittle:after, h2.tittle:before {
   width: 340px !important;
   height: 263px !important;
   margin: 0px !important;
+  background-color: transparent !important;
 }
 h4.modal-title {
   text-align: center;
@@ -635,7 +630,7 @@ h4.modal-title {
 }
 
 .ch-info h4{
-  font-family: 'Tahoma';
+  font-family: 'Roboto-Black';
   color: #DF1E1C;
   letter-spacing: 2px;
   font-size: 17px;
