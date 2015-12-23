@@ -1,7 +1,6 @@
 /*-- banner --*/
 .banner{
-	background:url(../images/banner.jpg) no-repeat;
-	background-size:cover;
+	background:url(../images/banner.jpg) repeat;
 	height:100vh;
 }
 .logo{
@@ -10,7 +9,7 @@
 }
 .top-menu{
 	float:right;
-	background: #4dc47d;
+	background: #14a748;
   margin: 3em 0 0 0;
   padding:0 3em 0 3em;
 }
@@ -83,6 +82,9 @@ ul.callbacks_tabs.callbacks1_tabs {
  width: 100%;
  position: absolute;
  top: 84px;
+ min-height: 300px;
+ background-color: rgba(0,0,0,0.5);
+ padding: 3% 0;
  left: 0%;
  text-align: center;
 }
