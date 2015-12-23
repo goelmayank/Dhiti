@@ -27,7 +27,7 @@ input[type="button"],input[type="submit"]{
   right: 0px;
   padding: 0 3em 0 3em;
   top: -43px;
-  background: #4dc47d;
+  background: #14a748;
   margin: 3em 0 0 0;
   padding:0 3em 0 3em;
 }
@@ -100,7 +100,7 @@ label{
   left: 0;
   right: 0;
   bottom: 0;
-  background:#cc7421;
+  background:#4E9249;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -159,7 +159,7 @@ h3.tittle,h2.tittle{
   font-family: 'Roboto-Regular';
   text-align:center;
   font-size:52px;
-  color:#cc7421;
+  color:#000;
   margin-bottom: 50px;
 }
 h3.tittle:after, h3.tittle:before {
@@ -188,6 +188,7 @@ h2.tittle:after, h2.tittle:before {
   font-size: 28px;
   color:#8EC358;
   font-weight:600;
+  text-align: left;
 }
 .ser-top p{
   color: #000;
@@ -324,7 +325,6 @@ h2.tittle:after, h2.tittle:before {
 }
 .abt-right p {
   color: #000;
-  font-size: 14px;
   line-height: 2em;
   margin: 20px 0;
 }
@@ -513,7 +513,7 @@ h2.tittle:after, h2.tittle:before {
 /*-- //guidelines --*/
 /*-- team --*/
 .team{
-  background:#8EC358;
+  background:#14A748;
 }
 .ch-item {
   width: 100%;
@@ -1285,7 +1285,6 @@ h4.modal-title {
    }
    .ser-grid {
      float: left;
-     width: 100%;
      text-align: center;
    }
    .ser-top {
@@ -1336,4 +1335,32 @@ h4.modal-title {
    .contact-left h3 {
      font-size: 16px;
    }
+ }
+
+ /*added by smit*/
+ .faq_cont{
+ 	position: relative;
+ 	width:100%;
+ 	text-align: center;
+ }
+ .faq_ques{
+ 	position: relative;
+ 	padding: 0 15px;
+ 	width:100%;
+ 	max-width: 1024px;
+ 	margin:auto;
+ }
+ .faq_ques_content{
+ 	padding-left: 60px;
+ 	margin-bottom: 25px;
+	min-height: 60px;
+ }
+ .faq_ques_content h4{
+	font-size: 28px;
+	color:#8EC358;
+	font-weight:600;
+	text-align: left;
+ }
+ .ser-grid{
+ 	position: absolute !important;
  }
